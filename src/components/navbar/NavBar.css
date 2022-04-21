@@ -1,0 +1,98 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 2;
+    position: absolute;
+    color: #e8e7e7;
+}
+.navbarBg{
+    background-color: #e8e7e7;
+}
+.navMenu{
+    display: flex;
+}
+li{
+    padding: 0 1rem;
+}
+.navIcons .icon{
+    margin-right: 2rem;
+}
+
+.menu{
+    display: none;
+    /*padding: 1rem;*/
+}
+.mobileMenu{
+    display: none;
+}
+.darkIcon{
+    color: black;
+}
+.icon{
+    cursor: pointer;
+    font-size: 2rem;
+}
+@media screen and (max-width: 940px){
+    .navMenu{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .navIcons{
+        display: none;
+    }
+    .mobileMenu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: -100vh;
+        left: 0;
+        position: absolute;
+        color: black;
+        background-color: #e8e7e7;
+        justify-content: space-between;
+        /*align-items: center;*/
+        transition: 0.5s
+    }
+    .black{
+        color: black;
+    }
+    .active{
+        top: 80px;
+    }
+    .mobileMenu li{
+        padding: 1.2rem 1rem;
+        margin: 0 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .mobileMenu button{
+        margin: 1rem;
+        width: 80%;
+    }
+
+    .mobileNav{
+        margin: 1rem 0;
+    }
+
+    .mobileMenuBottom{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .socialIcons{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+    .socialIcons .icon:hover{
+        transition: 0.2s;
+        transform: scale(1.1);
+    }
+
+}
